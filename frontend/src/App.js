@@ -25,7 +25,7 @@ function App() {
     setPeliculasRecomendadas([]);
 
     try {
-      const response = await fetch('/api/recomendaciones', {
+      const response = await fetch('https://recomendaciones-backend-9zzv.onrender.com/api/recomendaciones', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
